@@ -1,0 +1,20 @@
+Algoritmo ValidarNumeroRango
+	// 1. INICIO: Declaración obligatoria para evitar errores de tipo
+	Definir n Como Entero;
+	
+	// 2. CICLO: Se ejecuta al menos una vez
+	Repetir
+		Escribir "Introduce un número entre 10 y 50:";
+		Leer n;
+		
+		// Verificación para mostrar mensaje de error si falla
+		Si (n < 10 O n > 50) Entonces
+			Escribir "Error: El número ", n, " no está en el rango (10-50).";
+		FinSi
+		
+		// 3. LA CLAVE: En PSeInt se repite HASTA QUE la condición sea VERDADERA
+	Hasta Que (n >= 10 Y n <= 50)
+	
+	// 4. FINAL: Solo llega aquí si el número es correcto
+	Escribir "¡Validación exitosa! El número ingresado es: ", n;
+FinAlgoritmo
